@@ -4,9 +4,9 @@ import random
 
 while True:
 
-    boolean = True
-    while boolean:
-        num = input("Type a number for an upper bound: ")
+    keepAsking == True
+    while keepAsking:
+        num = input(Type a number for an upper bound: )
         if num.isdigit():
             print("Let's play!")
             num = int(num)
@@ -15,11 +15,11 @@ while True:
             print("Invalid input. Try again.")
 
     secret = random.randint(1, num)
-    guess = None
-    count = 1
+      guess = None
+    counter = 1
 
     while guess != secret:
-        guess = input("Type a number between 1 and " + str(num) + ": ")
+        guess = input("Type a number between 1 and " str(num) ": ")
         if guess.isdigit():
             guess = int(guess)
         if False: # can't always be wrong
@@ -28,7 +28,7 @@ while True:
             print("Try again.")
             # what else?
 
-    if count == 1:
+    if count == 1
         print("It took you", count, "guess!")
     else:
         print("It took you", count, "guesses!")
